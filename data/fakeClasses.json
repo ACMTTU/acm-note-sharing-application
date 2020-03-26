@@ -1,0 +1,29 @@
+{
+    "Classrooms": 
+    [
+        {
+            "Classroom 1": {
+                "Classroom": "Class name",
+                "Description": "Description here",
+            }
+        },
+        {
+            "Classroom 2": {
+                "Classroom": "Class name",
+                "Description": "Description here",
+            }
+        },
+        {
+            "Classroom 3": {
+                "Classroom": "Class name",
+                "Description": "Description here",
+            }
+        },
+        {
+            "Classroom 4": {
+                "Classroom": "Class name",
+                "Description": "Description here",
+            }
+        }
+    ]
+}

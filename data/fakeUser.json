@@ -1,0 +1,29 @@
+{
+    "username": "Tommy Smith",
+    "classrooms": [
+        {
+            "Calculus 3": 
+            {
+                "notes": []
+            }
+        },
+        {
+            "Software Engineering 1": 
+            {
+                "notes": []
+            }
+        },
+        {
+            "Algorithms": 
+            {
+                "notes": []
+            }
+        },
+        {
+            "Calculus 3": 
+            {
+                "notes": []
+            }
+        }
+    ]
+}
