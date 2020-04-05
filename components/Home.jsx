@@ -9,15 +9,17 @@ export default function Home(props) {
     
     
     
-    <View style={{flex:1,backgroundColor:"white",alignItems: 'flex-end',justifyContent: 'flex-end'}}>
+     
         <Icon
+            style={{flex:1,backgroundColor:"white",alignItems: 'flex-end',justifyContent: 'flex-end'}} 
             name ='plus'
             type ='simple-line-icon'
             color ='#00BDAA'
-            reverse
+            reverse>
+            </Icon>
 
-            />
-    </View>
+            
+    
 </View>
     );
 
