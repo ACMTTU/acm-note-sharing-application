@@ -1,26 +1,48 @@
 import React from 'react'
-import { View, Text } from 'react-native'
-import {Icon} from 'react-native-elements' 
+import { View, Text, StyleSheet, } from 'react-native'
+import {Button } from 'react-native-elements'
+/* import {Icon} from 'react-native-elements'  */
+import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
 export default function Home(props) {
 
     return (
-<View style={{flex:1,justifyContent:"center",backgroundColor:"#fff", alignItems:"stretch"}}>
-    
-    
-    
-     
-        <Icon
-            style={{flex:1,backgroundColor:"white",alignItems: 'flex-end',justifyContent: 'flex-end'}} 
-            name ='plus'
-            type ='simple-line-icon'
-            color ='#00BDAA'
-            reverse>
-            </Icon>
-
-            
-    
-</View>
+    <View style={styles.container}>
+        <Button
+            type = "clear"
+            style = {styles.customBtnBG}
+            icon={<Icon
+                name="plus"
+                size={45}
+                color="#00BDAA"
+                backgroundColor="white"
+                />
+            }    
+        />
+                
+        
+    </View>
     );
 
 };
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+          justifyContent: "center",
+      alignItems: "center"
+    },
+  
+    /* Here, style the text of your button */
+      customBtnText: {
+          fontSize: 40,
+          fontWeight: '400',
+          color: "#fff",
+      },
+  
+    /* Here, style the background of your button */
+      customBtnBG: {
+      paddingHorizontal: 5,
+      paddingVertical: 5,
+      borderRadius: 5,
+      }
+  });
