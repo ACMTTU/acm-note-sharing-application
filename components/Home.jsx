@@ -15,7 +15,8 @@ export default function Home(props) {
                 size={60}
                 color="#00BDAA"
                 />
-            }    
+            }
+            onClick={() => {}}    
         />
                 
         
@@ -27,7 +28,9 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: "flex-end",
-        alignItems: "flex-end"
+        alignItems: "flex-end",
+        paddingRight: 25,
+        paddingBottom: 20
     },
   
   
