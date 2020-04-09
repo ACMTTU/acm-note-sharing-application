@@ -12,7 +12,7 @@ export default function Discover(props){
                 justifyContent: 'center',
             }}
         >
-            <Text>This is the Discover screen</Text>
+            <Text>This is Jack editing</Text>
         </View>
     )
 };
