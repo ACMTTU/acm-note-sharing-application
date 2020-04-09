@@ -3,14 +3,39 @@ import { View, Text, StyleSheet, } from 'react-native'
 import {Button } from 'react-native-elements'
 import {Card} from 'react-native-elements'   
 import Classroom from './Classroom'
-import Icon from 'react-native-vector-icons/SimpleLineIcons';
+import Icon from 'react-native-vector-icons/SimpleLineIcons'
+import { ScrollView, Dimensions } from 'react-native'
+
 
 export default function Home(props) {
 
+    const {height} = Dimensions.get('window');
+    
 
+
+   
+    
     return (
-    <View>
+        
+         <ScrollView>
+        
+        
     <Classroom 
+        style = {styles.classroomStyle}  
+        courseName="100" 
+        title="Math" 
+        semester="Spring" 
+        professor="John"  
+    />  
+
+     <Classroom 
+        style = {styles.classroomStyle}  
+        courseName="100" 
+        title="Math" 
+        semester="Spring" 
+        professor="John"  
+    />  
+        <Classroom 
         style = {styles.classroomStyle}  
         courseName="100" 
         title="Math" 
@@ -25,6 +50,36 @@ export default function Home(props) {
         semester="Spring" 
         professor="John"  
     />  
+        <Classroom 
+        style = {styles.classroomStyle}  
+        courseName="100" 
+        title="Math" 
+        semester="Spring" 
+        professor="John"  
+    />  
+
+    <Classroom 
+        style = {styles.classroomStyle}  
+        courseName="100" 
+        title="Math" 
+        semester="Spring" 
+        professor="John"  
+    />  
+        <Classroom 
+        style = {styles.classroomStyle}  
+        courseName="100" 
+        title="Math" 
+        semester="Spring" 
+        professor="John"  
+    />  
+
+    <Classroom 
+        style = {styles.classroomStyle}  
+        courseName="100" 
+        title="Math" 
+        semester="Spring" 
+        professor="John"  
+    />   
     
         <Button
             style ={styles.ButtonStyle} 
@@ -38,8 +93,8 @@ export default function Home(props) {
             onClick={() => {}}    
         />
                 
-        
-    </View>
+ </ScrollView>   
+
     );
 
 };
