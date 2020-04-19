@@ -1,15 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { View, Text } from 'react-native'
 import {SearchBar} from 'react-native-elements'
 export default function Discover(props){
-    state = {
-        search: '',
-    };
-    updateSearch = search => {
-        this.setState({ search });
-    };
-    render () {
-        const { search } = this.state;
+   
+    const [text, setText] = useState('') 
+
     return ( 
         <View>
              <SearchBar
@@ -19,8 +14,8 @@ export default function Discover(props){
                     justifyContent: 'center',
                 }}
                 placeholder = "Search Notes Here..."
-                onChangeText={this.updateSearch}
-                value={search}
+                onChangeText={(e) => {setText(e)}}
+                value={text}
                 />
             <Text
             style = {{
@@ -33,4 +28,3 @@ export default function Discover(props){
         </View>
     );
 };
-}
