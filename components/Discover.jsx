@@ -13,6 +13,11 @@ export default function Discover(props){
     return ( 
         <View>
              <SearchBar
+                style= {{
+                    top: 0,
+                    flex: 1,
+                    justifyContent: 'center',
+                }}
                 placeholder = "Search Notes Here..."
                 onChangeText={this.updateSearch}
                 value={search}
