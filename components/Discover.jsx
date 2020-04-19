@@ -3,8 +3,6 @@ import { View, Text } from 'react-native'
 import { SearchBar } from 'react-native-elements';
 
 export default function Discover(props){
-
-    export default class SearchBar extends React.Component {
         state = {
             search:'',
         };
@@ -29,7 +27,6 @@ export default function Discover(props){
                 </View>
             )
         };
-    }
     return ( 
         <View
             style={{
