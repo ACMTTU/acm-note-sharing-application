@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 import { Card } from 'react-native-elements'
+import { TouchableOpacity } from 'react-native-gesture-handler'
 
 export default function Classroom(props){
   
     return (
         <View>
+            <TouchableOpacity onPress={() => console.log(1)} >
             <Card containerStyle={styles.container}>
                 <Text style={{
                     fontSize: 30
@@ -17,6 +19,7 @@ export default function Classroom(props){
                     }}
                 >{props.semester}</Text>
             </Card>
+            </TouchableOpacity>
         </View>
     )
 

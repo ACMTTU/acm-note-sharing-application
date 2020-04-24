@@ -16,100 +16,116 @@ export default function Home(props) {
    
     
     return (
+        <View>
+
+     <ScrollView>
         
-         <ScrollView>
         
-        
-    <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />  
+                <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />  
 
-     <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />  
-        <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />  
+                <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />  
+                    <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />  
 
-    <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />  
-        <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />  
+                <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />  
+                    <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />  
 
-    <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />  
-        <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />  
+                <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />  
+                    <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />  
 
-    <Classroom 
-        style = {styles.classroomStyle}  
-        courseName="100" 
-        title="Math" 
-        semester="Spring" 
-        professor="John"  
-    />   
-    
-        <Button
-            style ={styles.ButtonStyle} 
-            type = "clear" 
-            icon={<Icon
-                name="plus"
-                size={60}
-                color="#00BDAA"
-                />
-                }
-            onClick={() => {}}    
-        />
+                <Classroom 
+                    style = {styles.classroomStyle}  
+                    courseName="100" 
+                    title="Math" 
+                    semester="Spring" 
+                    professor="John"  
+                />   
                 
- </ScrollView>   
+
+                            
+    </ScrollView>   
+    <Button
+        style ={styles.ButtonStyle} 
+        type = "clear" 
+        icon={<Icon
+            name="plus"
+            size={65}
+            color="#00BDAA"
+            />
+            }
+        onPress={() => {}}    
+    />
+        </View> 
 
     );
 
 };
 const styles = StyleSheet.create({
     ButtonStyle: {
-        justifyContent: "flex-end",
-        alignItems: "flex-end", 
-        paddingRight: 25,
-        paddingBottom: 20,
+
+        position: "absolute",
+        bottom: 10,
+        right: 20
+
+       
+
+        
+        
+
+
+
+
+
+
+
 
     },
-    classroomStyle: {
-        flex: 1,        
+    classroomStyle: {     
+        position: "relative",   
         alignItems: "center",
         justifyContent: "center",
+
 
     },
   
