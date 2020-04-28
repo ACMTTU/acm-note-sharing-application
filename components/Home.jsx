@@ -9,7 +9,7 @@ import { ScrollView, Dimensions } from 'react-native'
 
 export default function Home(props) {
 
-    const {height} = Dimensions.get('window');
+    
     
 
 
